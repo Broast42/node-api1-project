@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 
 const AddUser = () => {
+    const [userToAdd, setUserToAdd] = useState({name: "", bio: ""})
+
+    const userHandle = (e) => {
+        setUserToAdd({
+            ...userToAdd,
+                [e.target.name]: e.target.value,
+        })
+    };
+
+    const addUser = (e) => {
+        e.preventDefault();
+
+    };
+
+    console.log("add user",userToAdd);
     return(
         <div className="add-form-container">
             <div className="add-form">
@@ -15,6 +30,7 @@ const AddUser = () => {
                             id="name"
                             type="text"
                             name="name"
+                            onChange={(e) => userHandle(e)}
                         /> 
                     </div>
                     <div>
@@ -23,6 +39,7 @@ const AddUser = () => {
                             id="bio"
                             type="text"
                             name="bio"
+                            onChange={(e) => userHandle(e)}
                         /> 
                     </div>
                     <button type="submit">Add A User</button>
