@@ -8,8 +8,26 @@ const AddUser = () => {
                 <div className="add-form-header">
                     <h3>Add a User</h3>
                 </div>
+                <form className="add-form-form">
+                    <div>
+                       <label htmlFor="name">Name: </label>
+                        <input
+                            id="name"
+                            type="text"
+                            name="name"
+                        /> 
+                    </div>
+                    <div>
+                        <label htmlFor="bio">Bio: </label>
+                        <input
+                            id="bio"
+                            type="text"
+                            name="bio"
+                        /> 
+                    </div>
+                    <button type="submit">Add A User</button>
+                </form>
 
-                
             </div>
         </div>
     );
