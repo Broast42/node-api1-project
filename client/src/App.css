@@ -88,7 +88,7 @@ h6{
 
 .body{
   width: 900px;
-  min-height: 900px;
+  min-height: 640px;
   margin: 0 auto;
   background:#d3d4f7;
   padding: 20px 10px;

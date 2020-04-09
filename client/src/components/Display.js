@@ -5,11 +5,12 @@ import axios from 'axios';
 const Display = (props) =>{
 
     const [formView, setFormView]= useState(false);
-    const [newInput, setNewInput] =useState({name: "", bio: ""});
+    const [newInput, setNewInput] =useState({id: "", name: "", bio: ""});
     
 
     useEffect(() =>{
         setNewInput({
+            id: props.user.id,
             name: props.user.name,
             bio: props.user.bio
         })

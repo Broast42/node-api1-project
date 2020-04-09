@@ -5,15 +5,20 @@ import AddUser from './AddUser';
 
 const Body = () =>{
     const [selectedUser, setSelectedUser] = useState({});
+    const [users, setUsers] = useState([]);
     
     return(
         <div className="body">
             <div className="user-list-container">
-                <UsersList setSelected={setSelectedUser} selected={selectedUser}/>
+                <UsersList 
+                    setSelected={setSelectedUser} 
+                    selected={selectedUser}
+                    userState= {[users, setUsers]}
+                />
             </div>
             <div className="col">
                 <Display user={selectedUser} setSelected={setSelectedUser} />
-                <AddUser />
+                <AddUser setSelected={setSelectedUser} users={users}/>
             </div>
             
         </div>

@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import axios from 'axios';
 
 
 const UsersList = (props) => {
-    const [users, setUsers] = useState([]);
+    const [users, setUsers] = props.userState;
 
     useEffect(() => {
         axios
@@ -15,7 +15,7 @@ const UsersList = (props) => {
             .catch(err =>{
                 console.log(err);
             });
-    },[props.selected]);
+    },[props.selected, setUsers]);
 
     console.log(users)
     return(
