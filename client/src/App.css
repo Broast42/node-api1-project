@@ -1,0 +1,252 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background: #f2f2f2;
+}
+
+h1{
+    font-size: 2.5rem;
+    padding: 5px 0;
+}
+
+h2{
+    font-size: 2.2rem;
+    padding: 5px 0;
+}
+
+h3{
+    font-size: 1.8rem;
+    padding: 5px 0;
+}
+
+h4{
+  font-size: 1.6rem;
+  padding: 5px 0;
+}
+
+h5{
+  font-size: 1.4rem;
+  padding: 5px 0;
+}
+
+h6{
+  font-size: 1rem;
+  padding: 5px 0;
+}
+
+.body{
+  width: 900px;
+  min-height: 640px;
+  margin: 0 auto;
+  background:#d3d4f7;
+  padding: 20px 10px;
+  display: flex;
+}
+
+header{
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  background: #e68a00;
+  border-bottom: 2px dashed #2e2fe3
+}
+
+.user-list-container{
+  width: 35%;
+  min-height: 500px;
+}
+
+.users-list{
+  width: 100%;
+  min-height: 500px;
+  background: #ffdd99;
+  border: 3px dashed #2e2fe3;
+  border-radius: 25px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-list-header{
+  width: 100%;
+  text-align: center;
+  background: #e68a00;
+  border-radius: 23px 23px 0px 0px;
+  border-bottom: 3px dashed #2e2fe3;
+}
+
+.user-list-item{
+  font-size: 1.6rem;
+  margin: 10px;
+  text-decoration: underline; 
+  cursor: pointer;
+}
+
+.user-list-item:hover{
+  color: #2e2fe3;
+}
+
+.display-container{
+  width: 100%;
+  min-height: 370px;
+  padding-left: 10px;
+}
+
+.display-window{
+  width: 100%;
+  min-height: 370px;
+  background: #8080ff;
+  border: 3px solid #e68a00;
+  border-radius: 25px;
+}
+
+.display-window-header{
+  width: 100%;
+  background: #2e2fe3;
+  border-radius: 23px 23px 0px 0px;
+  border-bottom: 3px solid #e68a00;
+  color: white;
+  text-align: center; 
+}
+
+.display-info{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2rem;
+}
+
+.display-info h3{
+  font-size: 5rem;
+  margin-bottom: 40px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.form label{
+  font-size: 1.3rem;
+}
+
+.form input{
+  margin: 5px;
+}
+
+.x-button{
+  position: relative;
+  left: 80px;
+  top: 5px;
+}
+
+.edit-button{
+  margin-top: 40px;
+}
+
+.form-box{
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 10px;
+  padding-bottom: 5px;
+}
+
+.edit-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-form-container{
+  width: 100%;
+  min-height: 130px;
+  padding-left: 10px;
+}
+
+.add-form{
+  width: 100%;
+  height: 120px;
+  background: white;
+  border: 3px dashed #2e2fe3;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+
+.add-form-header{
+  width: 100%;
+  background: #e68a00;
+  border-radius: 23px 23px 0px 0px;
+  border-bottom: 3px solid #2e2fe3;
+  text-align: center; 
+}
+
+.add-form-form{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.add-form-form label{
+  font-size: 1.5rem;
+}
+
+.col{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
